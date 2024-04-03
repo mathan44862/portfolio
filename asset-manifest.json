@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/mathan_portfolio/static/css/main.e6c13ad2.css",
+    "main.js": "/mathan_portfolio/static/js/main.ed317fc4.js",
+    "static/js/453.99dcf01f.chunk.js": "/mathan_portfolio/static/js/453.99dcf01f.chunk.js",
+    "static/media/Mathan.jpg": "/mathan_portfolio/static/media/Mathan.e0cd06f2a155b9e53a13.jpg",
+    "index.html": "/mathan_portfolio/index.html",
+    "main.e6c13ad2.css.map": "/mathan_portfolio/static/css/main.e6c13ad2.css.map",
+    "main.ed317fc4.js.map": "/mathan_portfolio/static/js/main.ed317fc4.js.map",
+    "453.99dcf01f.chunk.js.map": "/mathan_portfolio/static/js/453.99dcf01f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.ed317fc4.js"
+  ]
+}
