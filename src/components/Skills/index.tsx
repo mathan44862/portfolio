@@ -34,7 +34,6 @@ const Skills: React.FC = () => {
                         <DiMongodb size={60} color="#589636" />
                         <Typography variant="subtitle1">MongoDB</Typography>
                     </Box>
-
                 </Box>
                 <Divider sx={{ width: '70%', height: '4px', backgroundColor: '#a3b18a', margin: '20px 0' }} />
             </Box>

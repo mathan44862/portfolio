@@ -6,10 +6,13 @@ import { Box, Divider } from '@mui/material';
 import AboutMe from '../AboutMe';
 import Education from '../Education';
 import Skills from '../Skills';
+import Projects from '../Projects';
+import Certification from '../Certification';
+import Contact from '../Contact';
 
 const Portfolio: React.FC = () => {
   const [text] = useTypewriter({
-    words: ["Hello!!!"],
+    words: ["Welcome!!!"],
   });
 
   return (
@@ -41,9 +44,14 @@ const Portfolio: React.FC = () => {
           style={{ borderRadius: '50%' }} /> <br />
           {/* <Divider sx={{width:'70%' ,  height: '2px',backgroundColor: 'black' , margin: '20px 0'}}/> */}
       </Box>
+      <Contact />
+      <br />
       <AboutMe/>
       <Education/>
       <Skills/>
+      <Projects/>
+      <Certification />
+      
     </>
   );
 }
