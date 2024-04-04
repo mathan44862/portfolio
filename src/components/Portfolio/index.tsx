@@ -1,19 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { Box } from '@mui/material';
 import Profile from '../Mathan.jpg';
-import Profile1 from './Mathan-removebg-preview.png';
-import { useTypewriter } from "react-simple-typewriter";
-import { Box, Divider } from '@mui/material';
+import { useTypewriter } from 'react-simple-typewriter';
+import Contact from '../Contact';
 import AboutMe from '../AboutMe';
 import Education from '../Education';
 import Skills from '../Skills';
 import Projects from '../Projects';
 import Certification from '../Certification';
-import Contact from '../Contact';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Portfolio: React.FC = () => {
   const [text] = useTypewriter({
-    words: ["Welcome!!!"],
+    words: ['Welcome!!!'],
   });
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <>
@@ -41,17 +46,17 @@ const Portfolio: React.FC = () => {
           src={Profile}
           alt="Profile1"
           width={'300ch'}
-          style={{ borderRadius: '50%' }} /> <br />
-          {/* <Divider sx={{width:'70%' ,  height: '2px',backgroundColor: 'black' , margin: '20px 0'}}/> */}
+          style={{ borderRadius: '50%' }}
+          data-aos="flip-up" 
+        /> <br />
       </Box>
       <Contact />
       <br />
-      <AboutMe/>
-      <Education/>
-      <Skills/>
-      <Projects/>
+      <AboutMe />
+      <Education />
+      <Skills />
+      <Projects />
       <Certification />
-      
     </>
   );
 }
