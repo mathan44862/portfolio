@@ -17,7 +17,6 @@ const Contact: React.FC = () => {
   return (
     <Box sx={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
-        {/* Individual contact icons with tooltips */}
         <Tooltip title="Email">
           <EmailIcon sx={{ margin: '0 10px', cursor: 'pointer' }} onClick={() => handleIconClick('mailto:mathan44862@gmail.com')} />
         </Tooltip>
@@ -37,7 +36,7 @@ const Contact: React.FC = () => {
           <HackerRankIcon sx={{ margin: '0 10px', cursor: 'pointer' }} onClick={() => handleIconClick('https://www.hackerrank.com/profile/M__MATHAN')} />
         </Tooltip>
         <Tooltip title="Resume">
-          <ResumeIcon sx={{ margin: '0 10px', cursor: 'pointer' }} onClick={() => handleIconClick('https://drive.google.com/file/d/1q9rCsCaefmCAKvM39eQMGM449XCY0Fd-/view?usp=drive_link')} />
+          <ResumeIcon sx={{ margin: '0 10px', cursor: 'pointer' }} onClick={() => handleIconClick('https://drive.google.com/file/d/1wegkL0Zm2Bl0MIqYaICk0O6m3QbFa8Q3/view?usp=drive_link')} />
         </Tooltip>
       </Box>
     </Box>

@@ -2,11 +2,11 @@ import React, { useEffect } from 'react';
 import { Box, Divider, Paper, Typography } from '@mui/material';
 import SchoolIcon from '@mui/icons-material/School';
 import aos from 'aos';
-import 'aos/dist/aos.css'; // Import the CSS file
+import 'aos/dist/aos.css'; 
 
 const AboutMe: React.FC = () => {
   useEffect(() => {
-    aos.init({ duration: 1000 }); // Initialize AOS
+    aos.init({ duration: 1000 }); 
   }, []);
 
   return (

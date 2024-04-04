@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Box, Divider, Grid, Paper, Typography } from '@material-ui/core';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    margin: 'auto', // Center the component horizontally
+    margin: 'auto', 
     padding: theme.spacing(2),
-    maxWidth: '800px', // Optional: Add a maximum width to prevent the component from stretching too much
+    maxWidth: '800px', 
   },
   paper: {
     padding: theme.spacing(2),
@@ -17,11 +19,18 @@ const useStyles = makeStyles((theme) => ({
   },
   heading: {
     marginBottom: theme.spacing(2),
-    textAlign: 'center', // Center the text horizontally
+    textAlign: 'center', 
   },
 }));
 
-const awardsData = [
+interface Award {
+  prize: string;
+  eventName: string;
+  collegeName: string;
+  eventDescription: string;
+}
+
+const awardsData: Award[] = [
   {
     prize: 'First Prize',
     eventName: 'TechNeds ',
@@ -46,11 +55,17 @@ const awardsData = [
     collegeName: 'Nandha engineering college',
     eventDescription: 'For  identifying and debugging the errors ',
   },
-  // Add more awards as needed
 ];
 
 const AwardsComponent: React.FC = () => {
   const classes = useStyles();
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      easing: 'ease', // Easing function for animation
+    });
+  }, []);
 
   return (
     <div className={classes.root}>
@@ -58,7 +73,7 @@ const AwardsComponent: React.FC = () => {
       <Grid container spacing={3} justify="center">
         {awardsData.map((award, index) => (
           <Grid item xs={12} sm={6} key={index}>
-            <Paper className={classes.paper}>
+            <Paper className={classes.paper} data-aos="fade-up">
               <EmojiEventsIcon color="primary" fontSize="large" />
               <Typography variant="h6">{award.prize}</Typography>
               <Typography variant="body1">
