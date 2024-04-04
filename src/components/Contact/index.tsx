@@ -19,7 +19,7 @@ const Contact: React.FC = () => {
       <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
         {/* Individual contact icons with tooltips */}
         <Tooltip title="Email">
-          <EmailIcon sx={{ margin: '0 10px', cursor: 'pointer' }} onClick={() => handleIconClick('mailto:mathan@gmail.com')} />
+          <EmailIcon sx={{ margin: '0 10px', cursor: 'pointer' }} onClick={() => handleIconClick('mailto:mathan44862@gmail.com')} />
         </Tooltip>
         <Tooltip title="Phone">
           <PhoneIcon sx={{ margin: '0 10px', cursor: 'pointer' }} onClick={() => handleIconClick('tel:+91 9443244862')} />
