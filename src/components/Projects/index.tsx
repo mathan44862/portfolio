@@ -17,6 +17,7 @@ const Projects: React.FC = () => {
 
     return (
         <Box sx={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <Typography variant="h5" sx={{ marginBottom: '20px' }}>Projects</Typography>
             <Card sx={{ maxWidth: isMobile ? 300 : 600, marginBottom: '20px', backgroundColor: '#a3b18a', color: 'white' }} data-aos="fade-up">
                 <CardActions sx={{ display: 'flex', justifyContent: 'center' }}>
                     <img src={Necstaff} alt="Project Screenshot" style={{ maxWidth: '100%', height: 'auto' }} />
